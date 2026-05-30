@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HolaMundo.Maui.MenuHarburguesa.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HolaMundo.Maui.MenuHarburguesa"
+    xmlns:pages="clr-namespace:HolaMundo.Maui.MenuHarburguesa.Pages"
+    Title="HolaMundo.Maui.MenuHarburguesa">
+
+    <FlyoutItem Title="Home" FlyoutIcon="dotnet_bot.png">        
+        <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Página 1" FlyoutIcon="icon_lista.png">
+        <ShellContent Title="Página 1" ContentTemplate="{DataTemplate pages:NewPage1}" Route="Pagina 1"/>
+    </FlyoutItem>
+
+    
+</Shell>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HolaMundo.Maui.Pestañas.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HolaMundo.Maui.Pestañas"
+    xmlns:pages="clr-namespace:HolaMundo.Maui.Pestañas.Pages"
+    Title="Barbacoa">
+    <TabBar>
+        <Tab Title="Inicio">
+            <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+
+        <Tab Title="Menu">
+            <ShellContent Title="Menu" ContentTemplate="{DataTemplate pages:ProductosPage}" Route="Menu"/>
+        </Tab>
+
+        <Tab Title="Tienda">
+            <ShellContent Title="Tienda" ContentTemplate="{DataTemplate pages:TiendaPage}" Route="Tienda"/>
+        </Tab>
+        
+        <Tab Title="Perfil">
+            <ShellContent Title="Perfil" ContentTemplate="{DataTemplate pages:PerfilPage}" Route="Perfil"/>
+        </Tab>
+    </TabBar>
+</Shell>

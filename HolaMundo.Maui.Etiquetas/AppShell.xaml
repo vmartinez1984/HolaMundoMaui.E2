@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HolaMundo.Maui.Etiquetas.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HolaMundo.Maui.Etiquetas"
+    xmlns:paginas="clr-namespace:HolaMundo.Maui.Etiquetas.Pages"
+    Title="HolaMundo.Maui.Etiquetas">
+
+    <TabBar>
+        <Tab Title="Inicio">
+            <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+
+        <Tab Title="Menu">
+            <ShellContent Title="Menu" ContentTemplate="{DataTemplate paginas:MenuPage}" Route="Menu"/>
+        </Tab>
+
+        <Tab Title="Tienda">
+            <ShellContent Title="Tienda" ContentTemplate="{DataTemplate paginas:TiendaPage}" Route="Tienda"/>
+        </Tab>
+
+        <Tab Title="Perfil">
+            <ShellContent Title="Perfil" ContentTemplate="{DataTemplate paginas:UsuarioPage}" Route="Perfil"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
