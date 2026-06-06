@@ -2,6 +2,7 @@
   <Project Path="HolaMundo.Maui.BarraDeProgreso/HolaMundo.Maui.BarraDeProgreso.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="HolaMundo.Maui.Bindingv1/HolaMundo.Maui.Bindingv1.csproj" Id="95e33d52-8b13-47fa-9c04-a4a38ab3fe65" />
   <Project Path="HolaMundo.Maui.CajaDeTexto/HolaMundo.Maui.CajaDeTexto.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -17,7 +18,15 @@
   <Project Path="HolaMundo.Maui.CompartirDatos/HolaMundo.Maui.CompartirDatos.csproj" Id="0c00e1d8-3bd8-49f5-8046-bac4aceab0dc">
     <Deploy Solution="Debug|*" />
   </Project>
-  <Project Path="HolaMundo.Maui.CrudV1/HolaMundo.Maui.CrudV1.csproj" Id="598024cc-1c3d-4b83-997e-318baa4f28bd" />
+  <Project Path="HolaMundo.Maui.CrudV1/HolaMundo.Maui.CrudV1.csproj" Id="598024cc-1c3d-4b83-997e-318baa4f28bd">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.CrudV2/HolaMundo.Maui.CrudV2.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.CrudV3/HolaMundo.Maui.CrudV3.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="HolaMundo.Maui.DisplayAlert/HolaMundo.Maui.DisplayAlert.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -44,6 +53,12 @@
   </Project>
   <Project Path="HolaMundo.Maui.Rfc/HolaMundo.Maui.Rfc.csproj" Id="aa3a1519-2835-461a-b505-f5536f29ea2c" />
   <Project Path="HolaMundo.Maui.ToastV1/HolaMundo.Maui.ToastV1.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.WebService.Nasa/HolaMundo.Maui.WebService.Nasa.csproj" Id="d8e7e345-f600-4dd7-a305-5585c746ccc4">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.WebServices.Rfc/HolaMundo.Maui.WebServices.Rfc.csproj" Id="5de4dca8-be94-4299-8190-6b9598aa3041">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="HolaMundo.Maui/HolaMundo.Maui.csproj">

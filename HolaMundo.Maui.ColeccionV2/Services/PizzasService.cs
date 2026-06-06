@@ -25,6 +25,10 @@ namespace HolaMundo.Maui.Coleccion.Services
                     await response.Content.ReadAsStringAsync(),
                     new JsonSerializerOptions { PropertyNameCaseInsensitive = true}
                 );
+                for (int i = 0; i < pizzas.Count; i++)
+                {
+                    pizzas[i].Ruta = baseUrl.Replace("api/Pizzas/", string.Empty) + pizzas[i].Ruta.TrimStart('/');
+                }
 
                 return pizzas;
             }

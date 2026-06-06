@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundo.Maui.CrudV1.Pages.EditarProductoPage"
+             Title="EditarProductoPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Editar"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Nombre"/>
+        <Entry Placeholder="Peperoni" x:Name="EntryNombre"/>
+
+        <Label Text="Descripción"/>
+        <Entry Placeholder="Peperoni, queso" x:Name="EntryDescripcion"/>
+
+        <Button Text="Guardar" Clicked="ClickedGuardar"/>
+
+        <Button Text="Cancelar" Clicked="ClickedCancelar"/>
+
+    </VerticalStackLayout>
+</ContentPage>

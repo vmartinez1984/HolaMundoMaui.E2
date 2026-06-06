@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundo.Maui.WebServices.Rfc.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+            />
+
+            <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+            />
+
+            <Label
+                Text="RFC"
+                Style="{StaticResource SubHeadline}"
+            />
+
+            <Label Text="Tipo de persona"/>
+            <Picker Title="Seleccione" x:Name="Picker">
+                <Picker.Items>
+                    <x:String>Fisica</x:String>
+                    <x:String>Moral</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Nombre"/>
+            <Entry x:Name="EntryNombre"/>
+            
+            <Label Text="Primer apellido"/>
+            <Entry x:Name="EntryPrimerApellido"/>
+
+            <Label Text="Segundo apellido"/>
+            <Entry x:Name="EntrySegundoApellido"/>
+
+            <Label Text="Fecha de nacimiento"/>
+            <DatePicker x:Name="DatePicker" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

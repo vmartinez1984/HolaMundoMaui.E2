@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundo.Maui.WebService.Nasa.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                x:Name="Image" />
+
+            <Label
+                Text="Titulo"
+                Style="{StaticResource Headline}"
+                x:Name="LabelTitulo"/>
+
+            <Label
+                Text="Fecha"
+                Style="{StaticResource SubHeadline}"
+                x:Name="LabelFecha" />
+
+            <Label Text="Explicación" x:Name="LabelExplicacion"/>
+            
+            <Button            
+                Text="Cargar"                 
+                Clicked="ClickedCargarDatos"
+                HorizontalOptions="Fill" />
+
+            <ActivityIndicator x:Name="ActivityIndicator" IsRunning="True" IsVisible="False"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -23,21 +23,20 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
             />
-            
+
             <CollectionView x:Name="CollectionView">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Orientation="Vertical" Padding="15">
-                            <Label Text="{Binding Nombre}" />
+                            <Image Source="{Binding Ruta}" />
+                            <!--<Image Source="dotnet_bot.png" IsVisible="{Binding EstaCargando}"/>-->
+                            <Label Text="{Binding Nombre}" FontSize="Medium" />
                             <Label Text="{Binding Descripcion}"/>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            
-            
 
-            
         </VerticalStackLayout>
     </ScrollView>
 
