@@ -8,9 +8,16 @@
   <Project Path="HolaMundo.Maui.Calendario/HolaMundo.Maui.Calendario.csproj" Id="e4ed0e71-9aa2-4772-ba8c-36f5800f859d">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="HolaMundo.Maui.Coleccion/HolaMundo.Maui.Coleccion.csproj" Id="cc07fee9-bf71-4eb2-9bfd-e7066a9b6584">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.ColeccionV2/HolaMundo.Maui.ColeccionV2.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="HolaMundo.Maui.CompartirDatos/HolaMundo.Maui.CompartirDatos.csproj" Id="0c00e1d8-3bd8-49f5-8046-bac4aceab0dc">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="HolaMundo.Maui.CrudV1/HolaMundo.Maui.CrudV1.csproj" Id="598024cc-1c3d-4b83-997e-318baa4f28bd" />
   <Project Path="HolaMundo.Maui.DisplayAlert/HolaMundo.Maui.DisplayAlert.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -30,6 +37,9 @@
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="HolaMundo.Maui.Navegacion/HolaMundo.Maui.Navegacion.csproj" Id="b001f01b-f6e6-4b6b-8361-5cbfda505a4b">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.Picker/HolaMundo.Maui.Picker.csproj" Id="f5628fb1-5733-4ff5-83b3-c379ded2ae97">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="HolaMundo.Maui.Rfc/HolaMundo.Maui.Rfc.csproj" Id="aa3a1519-2835-461a-b505-f5536f29ea2c" />

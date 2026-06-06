@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundo.Maui.CrudV1.Pages.DetallesDelProductoPage"
+             Title="DetallesDelProductoPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Detalles"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="Nombre"/>
+        <Label x:Name="LabelNombre"/>
+
+        <Label Text="Descripcion"/>
+        <Label x:Name="LabelDescripcion"/>
+
+        <Button Text="Editar" Clicked="ClickedIrAEditar"/>
+    </VerticalStackLayout>
+</ContentPage>

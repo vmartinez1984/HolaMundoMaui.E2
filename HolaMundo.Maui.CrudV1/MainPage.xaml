@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundo.Maui.CrudV1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+            />
+
+            <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+                />
+
+            <Label
+                Text="CRUD v1"
+                Style="{StaticResource SubHeadline}"                
+                />
+
+            <Button               
+                Text="Agregar nuevo"                 
+                Clicked="ClickedAgregarNuevo"
+                HorizontalOptions="Fill" />
+
+            <ActivityIndicator IsRunning="True" x:Name="ActivityIndicator"/>
+            
+            <CollectionView x:Name="CollectionView" SelectionMode="Single" SelectionChanged="ChangedIrADetalles">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="{Binding Nombre}"/>
+                            <Label Text="{Binding Descripcion}"/>
+                        </StackLayout>                
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+        </VerticalStackLayout>
+        
+    </ScrollView>
+
+</ContentPage>
