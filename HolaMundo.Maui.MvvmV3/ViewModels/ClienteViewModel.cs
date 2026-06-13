@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui.Alerts;
 using HolaMundo.Maui.MvvmV1.Models;
 using HolaMundo.Maui.MvvmV1.Pages;
+using HolaMundo.Maui.MvvmV1.Services;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -11,7 +12,8 @@ namespace HolaMundo.Maui.MvvmV1.ViewModels
     public class ClienteViewModel : INotifyPropertyChanged //1 herede de esta interfaz
     {
         private readonly INavigation _navigation;
-        #region Models
+        private readonly UnidadDeTrabajo _unidadDeTrabajo;
+        #region Propiedades
         private ClienteModel clienteModel;
 
         public ClienteModel ClienteModel
@@ -23,6 +25,19 @@ namespace HolaMundo.Maui.MvvmV1.ViewModels
                 OnPropertyChanged();//4.- colocar el metodo de notificación de cambio
             }
         }
+
+        private bool estaCargando;
+
+        public bool EstaCargando
+        {
+            get { return estaCargando; }
+            set
+            {
+                estaCargando = value;
+                OnPropertyChanged();
+            }
+        }
+
         #endregion
 
         #region Commands
@@ -43,13 +58,21 @@ namespace HolaMundo.Maui.MvvmV1.ViewModels
         }
         #endregion
 
-        public ClienteViewModel(INavigation navigation)
+        public ClienteViewModel(INavigation navigation, UnidadDeTrabajo unidadDeTrabajo)
         {
-            //Los datos pueden venir de un servicio o base de datos
-            ClienteModel = new ClienteModel { Nombre = "Pancho", Apellidos = "Pantera" };
+            ClienteModel = new ClienteModel();
+            EstaCargando = false;
+
             //C Enlace de command con la función
             Command = new Command(Guardar);
-            _navigation = navigation;           
+            _navigation = navigation;
+            _unidadDeTrabajo = unidadDeTrabajo;
+        }
+
+        public async Task<ClienteModel> ObtenerAsync()
+        {
+            this.ClienteModel = await _unidadDeTrabajo.Cliente.ObtenerAsync();
+            return this.ClienteModel;
         }
 
         #region PropertyChanged

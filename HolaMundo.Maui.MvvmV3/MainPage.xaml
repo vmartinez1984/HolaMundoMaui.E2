@@ -34,6 +34,8 @@
             <Entry Text="{Binding ClienteModel.Apellidos}"/>
 
             <Button Text="Click me" Command="{Binding Command}" />
+
+            <ActivityIndicator IsVisible="True" IsRunning="{Binding EstaCargando}"/>
             
         </VerticalStackLayout>
     </ScrollView>

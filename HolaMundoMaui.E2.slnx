@@ -53,10 +53,16 @@
   <Project Path="HolaMundo.Maui.MenuHarburguesaV2/HolaMundo.Maui.MenuHarburguesav2.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="HolaMundo.Maui.Mvvm.ListaV1/HolaMundo.Maui.Mvvm.ListaV1.csproj" Id="e5cd6f95-fca3-44b8-94ea-c348d41cb05d">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="HolaMundo.Maui.MvvmV1/HolaMundo.Maui.MvvmV1.csproj" Id="c05152f3-122c-4d3a-abc7-ab639835c2ed">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="HolaMundo.Maui.MvvmV2/HolaMundo.Maui.MvvmV2.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.MvvmV3/HolaMundo.Maui.MvvmV3.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="HolaMundo.Maui.Navegacion/HolaMundo.Maui.Navegacion.csproj" Id="b001f01b-f6e6-4b6b-8361-5cbfda505a4b">
