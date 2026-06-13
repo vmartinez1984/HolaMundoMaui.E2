@@ -2,7 +2,9 @@
   <Project Path="HolaMundo.Maui.BarraDeProgreso/HolaMundo.Maui.BarraDeProgreso.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
-  <Project Path="HolaMundo.Maui.Bindingv1/HolaMundo.Maui.Bindingv1.csproj" Id="95e33d52-8b13-47fa-9c04-a4a38ab3fe65" />
+  <Project Path="HolaMundo.Maui.Bindingv1/HolaMundo.Maui.Bindingv1.csproj" Id="95e33d52-8b13-47fa-9c04-a4a38ab3fe65">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="HolaMundo.Maui.CajaDeTexto/HolaMundo.Maui.CajaDeTexto.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -33,6 +35,12 @@
   <Project Path="HolaMundo.Maui.Etiquetas/HolaMundo.Maui.Etiquetas.csproj" Id="14bd3f76-1c74-4089-b444-81b7af1e8f84">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="HolaMundo.Maui.Firma/HolaMundo.Maui.Firma.csproj" Id="0e8a6e57-8140-450c-ac92-8394a4138f5b">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.Gps/HolaMundo.Maui.Gps.csproj" Id="4c423e70-aa3a-4b9e-8386-8f293f27b369">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="HolaMundo.Maui.Imagen/HolaMundo.Maui.Imagen.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -45,10 +53,19 @@
   <Project Path="HolaMundo.Maui.MenuHarburguesaV2/HolaMundo.Maui.MenuHarburguesav2.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="HolaMundo.Maui.MvvmV1/HolaMundo.Maui.MvvmV1.csproj" Id="c05152f3-122c-4d3a-abc7-ab639835c2ed">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.MvvmV2/HolaMundo.Maui.MvvmV2.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="HolaMundo.Maui.Navegacion/HolaMundo.Maui.Navegacion.csproj" Id="b001f01b-f6e6-4b6b-8361-5cbfda505a4b">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="HolaMundo.Maui.Picker/HolaMundo.Maui.Picker.csproj" Id="f5628fb1-5733-4ff5-83b3-c379ded2ae97">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HolaMundo.Maui.Qrv2/HolaMundo.Maui.Qrv2.csproj" Id="30ee0ae6-6bcb-4651-9883-95bb6f3e11c0">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="HolaMundo.Maui.Rfc/HolaMundo.Maui.Rfc.csproj" Id="aa3a1519-2835-461a-b505-f5536f29ea2c" />

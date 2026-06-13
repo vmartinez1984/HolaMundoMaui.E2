@@ -1,0 +1,30 @@
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
+using ZXing.Net.Maui.Controls;
+
+namespace HolaMundo.Maui.Qr
+{
+    public static class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
+                .UseMauiCommunityToolkitCamera()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                });
+
+#if DEBUG
+    		builder.Logging.AddDebug();
+#endif
+            //builder.UseBarcodeReader();
+
+            return builder.Build();
+        }
+    }
+}
